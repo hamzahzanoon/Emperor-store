@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Emperor programming website
+    Website design, web developer, and modern software 
+    We strive to provide our best And A website developer dedicated to designing and implementing websites, mobile apps, and other digital products And All about programming and programmer in the emperor website for web design and web developer">
+    <meta name="keywords" content="Web developer-Emperor,web design,Programming,programmer,Programming Engineer,programming site,Site Emperor,html,css,javaScript,bootstrap 4,jquery,react,php">
+    <meta name="viewport" content="width=device-width , initial-scale=1">
+        <!-- [وسم الميتا الخاص بلغة الموقع والجغرافيا] -->
+        <meta content='hamzahzanoon' name='author'/>
+        <meta content='aa6hamzah6aa@gmail.com' name='Email'/>
+        <meta content='Global' name='distribution'/>
+        <meta content='all' name='audience'/>
+        <meta content='all' name='robots'/>
+        <meta content='index,follow' name='robots'/>
+        <meta content='General' name='rating'/>
+        <meta content='(c) 2022 The date the site was created' name='copyright'/>
+        <meta content='worldwide' name='coverage'/>
+        <meta content='1 days' name='revisit'/>
+        <meta content='1 days' name='revisit-after'/>
+        <meta content='document' name='resource-type'/>
+        <meta content='IE=edge' http-equiv='X-UA-Compatible'/> 
+        <meta content='En' http-equiv='content-language'/>
+        <meta content='Around the world' name='geo.country'/>
+        <meta content='en_En' property='og:locale'/>
+        <meta content='en_En' property='og:locale:alternate'/>
+        <meta content='Around the world' name='geo.placename'/>
+        <meta content='hamzahzanoon' name='The engineer'/>
+        <meta content='general' name='rating'/>
+        <meta content='Location' name='Web design and web developer'/>
+        <meta content='Around the world' name='geo.country'/>
+    <title>Emperor store</title>
+    <link rel="sortcut icon" tyle="images/tag.png" href="images/tag.png">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/createproduct.css">
+</head>
+<body>
+    
+    <nav class="sidebar close">
+        <header>
+        <div class="logo-details">
+            <i class="fa-brands fa-slack"></i>
+            <span class="logo_name">Emperor</span>
+        </div>
+        <ul class="nav-links">
+           <li>
+            <a href="index.html">
+                <i class="fa-solid fa-house-chimney"></i>
+            <span class="logo_name">Home</span>
+            </a>
+           </li>
+           <li>
+            <a href="cartprodcts.html">
+                <i class="fa-solid fa-cart-shopping"></i>
+            <span class="logo_name">Cart</span>
+            </a>
+           </li>
+           <li>
+            <a href="cartDetails.html">
+                <i class="fa-solid fa-image"></i>
+            <span class="logo_name">Product Show</span>
+            </a>
+           </li>
+           <li>
+            <a href="favorits.html">
+                <i class="fa-sharp fa-solid fa-crown"></i>
+            <span class="logo_name">Favorite</span>
+            </a>
+           </li>
+           <li>
+            <a href="createproduct.html">
+                <i class="fa-solid fa-download"></i>
+            <span class="logo_name">guest producer</span>
+            </a>
+           </li>
+
+         <ul id="links">
+             <li>
+            <a href="login.html">
+                <i class="fa-solid fa-right-to-bracket"></i>
+            <span class="logo_name">Sign in</span>
+            </a>
+           </li>
+           <li>
+            <a href="regaster.html">
+                <i class="fa-solid fa-right-to-bracket"></i>
+            <span class="logo_name">Sign Up</span>
+            </a>
+           </li>
+         </ul>
+         <ul id="user_info">
+            <li>
+               <div class="profile-details">
+                   <div class="profile-content">
+                    </div>
+                    <li><i class="fa-solid fa-user"></i><a href="" class="profile_name" id="user"></a></li>
+                    <li><a href="" id="logout"><i class="fa-solid fa-right-from-bracket"></i>Logo Ut</a></li>
+               </div>
+            </li>
+        </ul>
+        </ul>
+    </header>
+    </nav>
+
+    <section class="home-section">
+        <div class="home-content">
+            <span class="text">Emperor</span>
+        </div>
+        <div class="contaner">
+            <div class="cart-nav">
+                <div class="icon">
+                    <a href="cartprodcts.html">
+                    <i class="fa-solid fa-cart-shopping"></i>
+                   <span>Cart</span>
+                   <div class="item-numb">0</div>
+                   <div class="carts-prodcts">
+                    <div></div>
+                    </a>
+                </div>
+            </div>
+        </div>
+        <div class="box">
+            <form id="creat-form">
+                <h2>guest producer</h2>
+                <div class="inputBox">
+                    <input type="text" placeholder="Name ..." required id="product-name"/>
+                    <i></i>
+                </div>
+                <div class="inputBox">
+                    <input type="text" placeholder="Description ..." required id="product-desc"/>
+                    <i></i>
+                </div>
+                <div class="inputBox">
+                    <input type="number" placeholder="Price ..." required id="product-number"/>
+                    <i></i>
+                </div>
+                <div class="inputBox">
+                    <input type="file" placeholder="Upload Images ..." required id="upload_images_file"/>
+                    <i></i>
+                </div>
+                <input type="submit" value="Download" id="product-creat-btn"/>
+            </form>
+        </div>
+       
+    </section>
+
+    <script>
+        let box = document.querySelector(".box");
+        let faBar = document.querySelector(".fa-slack");
+        
+        faBar.addEventListener("click" , () => {
+         box.classList.toggle("boxs");
+        })
+    </script>
+
+  <script src="js/script2.js"></script>
+  <script src="js/user.js"></script>
+  <script src="js/data.js"></script>
+  <script src="js/cartmune.js"></script>
+  <script src="js/createproduct.js"></script>
+</body>
+</html>
